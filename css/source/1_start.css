@@ -1,0 +1,423 @@
+
+
+/*---------------------------------------*/
+/*	---------- START SCREEN --------------  */
+/*---------------------------------------*/
+
+.startscreen{
+	width: 100%;
+	height: 1000px;
+	max-height: 100vh;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: linear-gradient(to bottom, rgb(10,10,10),#2e8ece) no-repeat;
+	background: linear-gradient(to bottom, rgb(255,255,255), #f1c40f) no-repeat;
+	background: #f1c40f;
+	background: white;
+	box-sizing: border-box;
+}
+
+#hi{
+	position: absolute;
+	left: 50%;
+	top: 51%;
+	transform: translateY(-50%) translateX(-50%);
+	font-weight: 400;
+	font-family: "Playfair Display";
+	font-size: 38px;
+	color: black;
+	z-index: 3;
+	transition: 0.2s linear;
+	text-align: center;
+	line-height: 30px;
+	min-width: 400px;
+}
+
+#hi span{
+	font-size: 14px;
+	font-family: "Raleway";
+	color: rgb(100,100,100);
+}
+
+
+#welcome{
+	position: absolute;
+	display: block;
+	left: 400px;
+	bottom: 250px;
+	transform: translateY(-50%) translateX(-50%);
+	font-weight: 400;
+	font-family: "Playfair Display";
+	font-size: 50px;
+	color: white;
+	z-index: 3;
+}
+
+#navigationBar{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 1400px;
+	z-index: 4;
+	height: auto;
+}
+
+
+#navigationButtonWrapper{
+	height: 80px;
+	width: 700px;
+	position: absolute;
+	left: 50%;
+	top: 40px;
+	transform: translateY(-50%) translateX(-50%);
+	max-width: 80%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px 0 20px;
+	transition: 0.4s linear;
+}
+
+#navigationButtonWrapper > i{
+	color: black;
+	opacity: 0;
+	font-size: 6px;
+}
+
+
+#navigationButtonWrapper a{
+	opacity: 1;
+	text-decoration: none;
+	position: relative;
+	transition: 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	flex-direction: column;
+	/*transform: translateY(-100px);*/
+}
+
+.navHeader{
+	font-weight: 400;
+	font-size: 16px;
+	font-family: "Raleway";
+	letter-spacing: 1px;
+	color: black;
+}
+
+.navbuttons > .expandingUnderline{
+	border-bottom: 3px solid black;
+	width: 0px;
+	opacity: 0.1;
+	transition: 0.4s ease;
+}
+
+.navbuttons:hover > .expandingUnderline{
+	width: 100%;
+	opacity: 1;
+}
+
+.landing_link{
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	text-decoration: none;
+	border-radius: 50%;
+	border: 1px solid rgb(200,200,200);
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	transition: 0.05s ease;
+}
+
+.landing_link i{
+	color: rgb(200,200,200);
+	font-size: 18px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.landing_link:hover > i{
+	color: white;
+}
+
+.landing_link:hover{
+	background-color: black;
+	border-color: black;
+}
+
+#landing_github{
+	right: 25px;
+}
+
+#landing_linkedin{
+	right: 80px;
+}
+
+
+#message{
+	position: absolute;
+	top: 35%;
+	right: 0px;
+	transform: translateY(-50%);
+	z-index: 5;
+	text-align: right;
+}
+
+
+#message p{
+	font-family: "Raleway";
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 0px;
+	line-height: 50px;
+	text-align: right; 
+	color: black;
+	text-align: right;
+	transition: 0.3s linear;
+	opacity: 0;
+}
+
+#forestHolder{
+	z-index: 3;
+	position: absolute;
+	bottom: 50px;
+	height: auto;
+	max-height: 350px;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+#forest{
+	position: center center;
+	width: 110%;
+	height: auto;
+	z-index: 3;
+}
+
+#mountainHolder{
+	transform: translate3d(0, 0, 0);
+	position: absolute;
+	bottom: 50px;
+	left: -40%;
+	height: auto;
+	width: 135%;
+	overflow: hidden;
+	transition: 0.1s linear;
+	box-sizing: border-box;
+	border-bottom: 80px solid rgb(255,255,255);
+	background: linear-gradient(to top, white 20px, transparent 10px);
+}
+
+
+#mountain{
+	position: bottom center;
+	width: 100%;
+	height: auto;
+}
+
+#mountainHolder2{
+	transform: translate3d(0, 0, 0);
+	position: absolute;
+	bottom: 50px;
+	right: -20%;
+	height: auto;
+	width: 90%;
+	overflow: hidden;
+	transition: 0.1s linear;
+	box-sizing: border-box;
+	border-bottom: 80px solid rgb(255,255,255);
+	background: linear-gradient(to top, white 20px, transparent 10px);
+}
+
+
+#mountain2{
+	position: center center;
+	width: 110%;
+	height: auto;
+}
+
+#lowerBackground{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	background-color: rgb(255,255,255);
+}
+
+
+#startImgHolder{
+	position: absolute;
+	top: 80px;
+	bottom: 50px;
+	left: 60px;
+	right: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1800px;
+	overflow: hidden;
+	z-index: 3;
+	box-shadow: 2px 2px 12px 2px rgb(20,20,20);
+}
+
+#startImg{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 2;
+	background-color: rgb(40,40,40);
+	background-image: url("../images/desk5dyed.jpeg");
+	background-position: center center;
+	background-size: cover; 
+}
+
+#startContent{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 4;
+	backface-visibility: hidden; 
+}
+
+#scrollDown{
+	border-radius: 50%;
+	border: 2px solid transparent;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0 auto 0 auto;
+	z-index: 40;
+	color: black;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.1s linear;
+}
+
+#scrollDown > div {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	height: 0px;
+	width: 300px;
+	border-left: 3px solid black;
+	transform: translateX(-2px);
+	transition: 0.15s linear;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#scrollDown > div > p {
+	position: absolute;
+	top: 5px;
+	left: -100%;
+}
+
+#scrollDown > i {
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 40px;
+}
+
+#scrollDown:hover div{
+	height: 45px;
+}
+
+#scrollDown:hover div > p{
+	animation-name: showFromLeft;
+	animation-delay: 0.25s;
+	animation-duration: 0.4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes showFromLeft{
+	0%   {left: -100%;}
+	100%   {left: 15px;}
+}
+
+.startscreen h1{
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+	right: 0;
+	font-family: 'abril Fatface';
+	font-size: 40px;
+	color: rgb(245,245,245);
+}
+
+#hamburger{
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	top: 50px;
+	right: 40px;
+	transform: translateY(-50%);
+	z-index: 20;
+	border: 10px solid transparent;
+	display: none;
+}
+
+.menuLine{
+	position: absolute;
+	right: 0;
+	height: 0;
+	transform: translateY(-50%);
+	border-bottom: 2px solid rgb(250,250,250);
+	transition: 0.3s ease, border-radius 0s linear;
+}
+
+#menuLine1{
+	top: 0;
+	width: 100%;
+}
+
+#menuLine2{
+	top: 33%;
+	width: 80%;
+}
+
+#menuLine3{
+	top: 67%;
+	width: 90%;
+}
+
+#menuLine4{
+	top: 100%;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

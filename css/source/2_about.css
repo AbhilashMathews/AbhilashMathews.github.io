@@ -1,0 +1,1474 @@
+
+
+/*---------------------------------------*/
+/*	---------- ABOUT --------------  */
+/*---------------------------------------*/
+
+.about{
+	background-color: white;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	z-index: 3;
+	padding-top: 100px;
+}
+
+#aboutWrapper{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	overflow: hidden;
+}
+
+
+#resume{
+	width: 130px;
+	height: 60px;
+	border-radius: 500px;
+	border: 1px solid black;
+	background-color: black;
+	text-decoration: none;
+	transition: 0.05s linear;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transform: scale(1);
+	margin: 320px auto 150px auto;
+	z-index: 20;
+	overflow: hidden;
+}
+
+#resumeExpandingBackground{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transform: rotateZ(0);
+	height: 0px;
+	transition: 0.3s ease;
+	background-color: white;
+}
+
+
+#resume p{
+	font-family: "Raleway";
+	font-weight: 400;
+	font-size: 19px;
+	letter-spacing: 0px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: uppercase;
+	position: relative;
+	color: white;
+	z-index: 3;
+	display: block;
+	transition: 0.2s linear;
+}
+
+#resume:hover #resumeExpandingBackground{
+	height: 100%;
+}
+
+#resume:hover p{
+	color: black;
+}
+
+
+#aboutMe{
+	position: relative;
+	font-weight: 400;
+	font-size: 42px;
+	color: #2C3E50;
+	color: black;
+	padding: 0;
+	margin-bottom: 20px;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	letter-spacing: -1px;
+}
+
+
+
+#aboutText{
+	padding: 0px 0 0px 0;
+	max-width: 700px;
+	margin: 0 auto;
+	width: 80%;
+	display: block;
+	position: relative;
+}
+
+
+
+#aboutText p{
+	margin: 20px;
+	position: relative;
+	display: inline-block;
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 16px;
+	color: rgb(100,100,100);
+	text-align: left;
+}
+
+#aboutText b{
+	color: black;
+}
+
+#eduSep{
+	width: 50px;
+	height: 50px;
+	transform: translateY(50%) rotateZ(45deg);
+	background-color: white;
+}
+
+#timelineStartDot{
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	transform: translateX(-10px);
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	border: 1px solid #F64747;
+	background-color: white;
+	display: none;
+}
+
+#timelineStartLine{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50px;
+	bottom: 0px;
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	display: none;
+}
+
+/*---------------------------*/
+/*DESK AND LAMP*/
+/*---------------------------*/
+
+
+.bulbLine{
+	z-index: -1;
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	border-left: 1px solid black;
+	transform: translateX(-50%);
+}
+
+.bulbHolder{
+	position: absolute;
+	left: 50%;
+	border: 1px solid black;
+	transform: translateX(-50%);
+	width: 10px;
+	height: 10px;
+	border-radius: 2px;
+	background-color: rgb(230,230,230);
+	
+	transition: 0.1s linear;
+}
+
+.footLine{
+	position: absolute;
+	border-bottom: 1px solid black;
+	width: 5px;
+	transform: translateY(-50%);
+}
+
+.bulb{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: white;
+	box-shadow: none;
+	transition: 0.15s linear;
+	overflow: hidden;
+}
+
+.bulbShine{
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transition: 0.15s linear;
+	border: 1px solid transparent;
+	box-shadow: none;
+}
+
+#overResume{
+	position: absolute;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 800px;
+	height: 70px;
+	left: 50%;
+	bottom: 350px;
+}
+
+#bulbLineStartHolder{
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	width: 100px;
+	height: 20px;
+	transform: translateX(-50%);
+	border-top: 1px solid black;
+	z-index: 2;
+}
+
+#bulbLineStart{
+	position: absolute;
+	left: 50%;
+	top: -1px;
+	width: 16px;
+	height: 16px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	transform: translateX(-50%);
+	border-radius: 1px 1px 3px 3px;
+	z-index: 2;
+}
+
+#roofBoxLine{
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	height: 10px;
+	width: 5px;
+	border-left: 1px solid rgb(160,160,160);
+	border-top: 1px solid rgb(160,160,160);
+}
+
+#bulbLineStartBottom{
+	position: absolute;
+	top: 13px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	width: 6px;
+	height: 5px;
+	border-radius: 2px;
+	z-index: 1;
+}
+
+#overResume .bulbLine{
+	/*border-color: #F64747;*/
+	top: 0px;
+	height: 100%;
+}
+
+#overResume .bulbHolder{
+	bottom: 0;
+}
+
+#overResume .footLine{
+	left: 0px;
+	top: 3px;
+}
+
+#overResume .bulb{
+	z-index: 10;
+	transform: translateX(-50%) translateY(5px);
+}
+
+#overResume .bulbShine{
+	top: 40%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+#underResume{
+	position: absolute;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 800px;
+	bottom: 0px;
+	left: 50%;
+}
+
+#underResume .bulbHolder{
+	top: 8px;
+}
+
+#underResume .footLine{
+	right: 0px;
+	bottom: 1px;
+}
+
+#underResume .bulb{
+	transform: translateX(-50%) translateY(-20px);
+}
+
+#underResume .bulbShine{
+	bottom: 40%;
+	transform: translateX(-50%) translateY(50%);
+}
+
+#shelf{
+	position: absolute;
+	top: 55px;
+	left: 115px;
+	width: 200px;
+	height: 150px;
+	z-index: -1;
+}
+
+.shelfPart{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 50%;
+}
+
+.shelfPart:nth-child(1){
+	top: 0;
+}
+
+.shelfPart:nth-child(2){
+	bottom: 20px;
+}
+
+.leftShelfHolder{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: black;
+	height: 80%;
+	width: 1px;
+	border-radius: 3px;
+	z-index: -1;
+}
+.rightShelfHolder{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateX(50%) translateY(-50%);
+	background-color: black;
+	height: 80%;
+	width: 1px;
+	border-radius: 3px;
+	z-index: -1;
+}
+/*
+.leftShelfHolder > div, .rightShelfHolder > div{
+	position: absolute;
+	top: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 5px;
+	border-radius: 3px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+}
+*/
+/*.upperScrew{
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	transform: translateX(-50%);
+	width: 2px;
+	height: 2px;
+	background-color: black;
+}*/
+/*.lowerScrew{
+	position: absolute;
+	bottom: 1px;
+	left: 2px;
+	transform: translateX(-50%);
+	width: 2px;
+	height: 2px;
+	background-color: black;
+}*/
+
+.overBoardLeft, .overBoardRight{
+	position: absolute;
+	bottom: 24px;
+	height: 7px;
+	width: 4px;
+	border-radius: 3px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	z-index: -1;
+}
+
+.overBoardLeft{
+	left: 10px;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.overBoardLeft div, .overBoardRight div{
+	position: absolute;
+	top: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 2px;
+	height: 2px;
+	background-color: black;
+}
+
+.overBoardRight{
+	right: 10px;
+	transform: translateX(50%) translateY(-50%);
+}
+
+.underBoardLeft, .underBoardRight{
+	position: absolute;
+	top: 65%;
+	height: 1px;
+	width: 5px;
+	border-radius: 2px;
+	border: 1px solid black;
+	background-color: white;
+	z-index: -1;
+}
+
+.underBoardLeft{
+	left: 10px;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.underBoardRight{
+	right: 10px;
+	transform: translateX(50%) translateY(-50%);
+}
+
+.shelfBoard{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	height: 4px;
+	width: 100%;
+	border-radius: 2px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	z-index: 2;
+}
+
+.book{
+	position: absolute;
+	bottom: 40%;
+	border-radius: 2px;
+	border: 1px solid black;
+	z-index: 1;
+	transform: translateX(-50%);
+	z-index: 1;
+	background-color: white;
+	overflow: hidden;
+	transition: 0.2s linear;
+}
+
+
+#b1{
+	left: 20px;
+	height: 40px;
+	width: 5px;
+}
+#b2{
+	left: 27px;
+	height: 35px;
+	width: 7px;
+	
+}
+#b3{
+	left: 40px;
+	height: 40px;
+	width: 5px;
+	transform: translateX(-50%) rotateZ(-20deg) translateY(-1px);
+}
+
+
+#b4{
+	right: 13px;
+	height: 40px;
+	width: 5px;
+}
+#b5{
+	right: 18px;
+	height: 35px;
+	width: 7px;
+	
+}
+#b6{
+	right: 27px;
+	height: 40px;
+	width: 5px;
+}
+#b7{
+	right: 33px;
+	height: 40px;
+	width: 5px;
+}
+#b8{
+	right: 38px;
+	height: 35px;
+	width: 7px;
+	
+}
+#b9{
+	bottom: 15px;
+	right: 76px;
+	height: 40px;
+	width: 5px;
+	transform: translateX(-50%) rotateZ(-90deg);
+}
+
+#rotatingBookCover{
+	position: absolute;
+	top: 65%;
+	right: 50px;
+	border-radius: 2px;
+	z-index: 1;
+	background-color: white;
+	overflow: hidden;
+	transition: 0.2s linear;
+	width: 40px;
+	height: 40px;
+}
+
+
+#lamp{
+	height: 240px;
+	width: 100px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+#lamp .bulbLine{
+	bottom: 10px;
+}
+
+#thickLampLeg{
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	width: 7px;
+	height: 170px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 3px;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+#lampLine{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	border-left: 1px solid rgb(160,160,160);
+	height: 160px;
+}
+
+#lampBallUnder, #lampBallOver{
+	position: absolute;
+	left: 50%;
+	width: 5px;
+	height: 5px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	border-radius: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+#lampBallUnder{
+	bottom: 9px;
+}
+
+#lampBallOver{
+	bottom: 186px;
+}
+
+#lampFoot{
+	position: absolute;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	height: 4px;
+	width: 46px;
+	left: 50%;
+	bottom: 3px;
+	transform: translateX(-50%);
+	border-radius: 3px;
+	z-index: 2;
+}
+
+#lampFootBallLeft, #lampFootBallRight{
+	position: absolute;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	height: 4px;
+	width: 2px;
+	border-radius: 50%;
+	z-index: 1;
+	bottom: -1px;
+}
+
+#lampFootBallLeft{
+	left: 32px;
+	transform: translateX(-50%);
+}
+
+#lampFootBallRight{
+	right: 32px;
+	transform: translateX(50%);
+}
+
+
+#tableLamp{
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	transform: translateX(-50%) translateY(-50%);
+	width: 90px;
+	height: 80px;
+	overflow: hidden;
+}
+
+#lampShadeBottom{
+	position: absolute;
+	left: 50%;
+	bottom: 7px;
+	transform: translateX(-50%);
+	width: 86px;
+	height: 5px;
+	border-radius: 50%;
+	border: 1px solid black;
+	transition: 0.1s linear;
+}
+
+#lampShadeTop{
+	position: absolute;
+	left: 50%;
+	top: 8px;
+	transform: translateX(-50%);
+	width: 18px;
+	height: 2px;
+	border-radius: 50%;
+	border: 1px solid black;
+	transition: 0.1s linear;
+}
+
+#lampShadeLeft{
+	position: absolute;
+	left: 17px;
+	bottom: 5px;
+	transform: rotateZ(31deg);
+	border-left: 1px solid black;
+	height: 70px;
+	transition: 0.1s linear;
+}
+
+#lampShadeRight{
+	position: absolute;
+	right: 17px;
+	bottom: 5px;
+	transform: rotateZ(-31deg);
+	border-left: 1px solid black;
+	height: 70px;
+	transition: 0.1s linear;
+}
+
+
+#desk{
+	position: absolute;
+	right: 20px;
+	bottom: -2px;
+	width: 220px;
+	height: 120px;
+	z-index: -1;
+}
+
+.deskPart{
+	border: 1px solid black;
+	background-color: white;
+	transition: 0.1s linear;
+}
+
+#leftLegBall, #rightLegBall{
+	width: 4px;
+	height: 4px;
+	position: absolute;
+	bottom: 1px;
+	border-radius: 50%;
+	background-color: rgb(230,230,230);
+	
+}
+
+#leftLeg, #rightLeg{
+	width: 5px;
+	height: 90px;
+	position: absolute;
+	bottom: 6px;
+	border-radius: 0px 0px 3px 3px;
+	background-color: white;
+}
+
+#leftLegTop, #rightLegTop{
+	width: 7px;
+	height: 70px;
+	position: absolute;
+	bottom: 20px;
+	border-radius: 0px 0px 3px 3px;
+	border-width: 1px;
+	background-color: white;
+}
+
+#legLine1, #legLine2{
+	border-left: 1px solid rgb(160,160,160);
+	position: absolute;
+	bottom: 5px;
+	height: 55px;
+}
+#legLine1{
+	left: 5px;
+}
+#legLine2{
+	right: 5px;
+}
+
+
+#leftLeg, #leftLegBall, #leftLegTop{
+	left: 10px;
+	transform: translateX(-50%);
+}
+
+#rightLeg, #rightLegBall, #rightLegTop{
+	right: 10px;
+	transform: translateX(50%);
+}
+
+
+#lowerPart{
+	position: absolute;
+	left: 50%;
+	bottom: 85px;
+	transform: translateX(-50%);
+	width: 220px;
+	height: 20px;
+	z-index: 1;
+	border-radius: 0px 0px 3px 3px;
+}
+
+#drawer{
+	height: 12px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 115px;
+	border-radius: 2px;
+	background-color: rgb(230,230,230);
+	
+}
+
+#innerDrawer{
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	border: 1px solid rgb(160,160,160);
+	height: 8px;
+	width: 111px;
+	border-radius: 2px;
+}
+
+#keyHole{
+	position: absolute;
+	left: 50%;
+	top: 5px;
+	transform: translateY(-50%) translateX(-50%);
+	width: 3px;
+	height: 3px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+#upperPart{
+	position: absolute;
+	left: 50%;
+	bottom: 106px;
+	transform: translateX(-50%);
+	height: 5px;
+	width: 240px;
+	border-radius: 2px;
+	z-index: 2;
+}
+
+#coffeeMugOuter{
+	position: absolute;
+	right: 30px;
+	bottom: 112px;
+	transform: translateX(50%);
+	width: 15px;
+	height: 19px;
+	z-index: 1;
+}
+
+#coffeeMug{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	border-radius: 2px;
+	border: 1px solid black;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+#coffeeMug div:nth-child(1){
+	position: absolute;
+	right: 1px;
+	bottom: 0px;
+	border-radius: 1px;
+	border-left: 1px solid rgb(160,160,160);
+	transform: translateY(-1px);
+	height: 12px;
+	z-index: 0;
+}
+
+#coffeeMug div:nth-child(2){
+	position: absolute;
+	right: 1px;
+	bottom: 0px;
+	border-radius: 1px;
+	border-bottom: 1px solid rgb(160,160,160);
+	transform: translateY(-1px);
+	height: 0px;
+	width: 2px;
+	z-index: 0;
+}
+
+#coffeeMugHandle{
+	position: absolute;
+	right: -7px;
+	top: 3px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: white;
+	width: 7px;
+	height: 9px;
+	z-index: 1;
+}
+
+.coffeeSteam{
+	position: absolute;
+	transform: translateY(23px) translateX(-50%);
+	border-radius: 30px;
+	width: 5px;
+	height: 9px;
+	z-index: 1;
+	transition: 0.25s linear;
+	opacity: 0;
+}
+
+.coffeeSteam:nth-child(1){
+	left: 7px;
+	top: -10px;
+	border-left: 2px solid rgba(180,180,180,0.4);
+}
+
+.coffeeSteam:nth-child(2){
+	left: 7px;
+	top: -16px;
+	border-right: 2px solid rgba(180,180,180,0.4);
+}
+
+.coffeeSteam:nth-child(3){
+	left: 7px;
+	top: -22px;
+	border-left: 2px solid rgba(180,180,180,0.4);
+}
+
+#computer{
+	position: absolute;
+	left: 50%;
+	bottom: 111px;
+	transform: translateX(-50%);
+	width: 120px;
+	height: 80px;
+}
+
+#compLower{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	width: 80px;
+	height: 6px;
+	border-radius: 2px 2px 10px 10px;
+	border: 1px solid black;
+	background-color: white;
+	z-index: 3;
+	overflow: hidden;
+}
+
+#compUpper{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	width: 65px;
+	height: 43px;
+	border-radius: 4px;
+	border: 1px solid black;
+	background-color: white;
+	z-index: 2;
+}
+
+#screen{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0px;
+	width: 56px;
+	height: 37px;
+	border-radius: 2px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	z-index: 2;
+
+}
+.computerLine{
+	position: absolute;
+	left: 3px;
+	border-top: 1px solid white;
+}
+
+.hiddenCompLine{
+	visibility: hidden;
+}
+
+#line1{
+	top: 5px;
+	width: 20px;
+}
+#line2{
+	top: 7px;
+	width: 5px;
+}
+#line3{
+	top: 9px;
+	width: 10px;
+}
+#line4{
+	top: 11px;
+	width: 25px;
+}
+#line5{
+	top: 7px;
+	width: 8px;
+}
+#line6{
+	top: 9px;
+	width: 15px;
+}
+#line7{
+	top: 13px;
+	width: 21px;
+}
+#line8{
+	top: 15px;
+	width: 4px;
+}
+#line9{
+	top: 17px;
+	width: 12px;
+}
+
+#webcam{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 40px;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+
+#painting{
+	position: absolute;
+	right: 70px;
+	bottom: 170px;
+	transform: translateY(-50%);
+	width: 76px;
+	height: 105px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	border-radius: 2px;
+}
+
+#innerFrame{
+	position: absolute;
+	border-radius: 1px;
+	left: 3px;
+	top: 4px;
+	width: 68px;
+	height: 96px;
+	border: 1px solid rgb(160,160,160);
+}
+
+#selfPortrait{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 61px;
+	height: 88px;
+	border: 1px solid black;
+	border-radius: 2px;
+	background-color: white;
+}
+
+#selfPortrait div{
+	transition: 0.1s linear;
+}
+
+#pSquare1{
+	position: absolute;
+	border: 1px solid black;
+	width: 26px;
+	height: 26px;
+	right: 7px;
+	top: 25px;
+}
+
+#pSquare2{
+	position: absolute;
+	border: 1px solid black;
+	width: 30px;
+	height: 30px;
+	left: 8px;
+	bottom: 13px;
+}
+
+#pSquare3{
+	position: absolute;
+	border: 1px solid black;
+	width: 10px;
+	height: 10px;
+	right: 12px;
+	top: 12px;
+	background-color: white;
+	z-index: 10;
+}
+
+#pCircle1{
+	position: absolute;
+	border: 1px solid black;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	left: 5px;
+	top: 4px;
+}
+
+#pCircle2{
+	position: absolute;
+	border: 1px solid black;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	right: 5px;
+	bottom: 5px;
+}
+
+/*<div id="backpack">
+	<div id="cover">
+		<div id="label"><div></div><div>
+		</div></div>
+		<div id="leftBuckle">
+			<div class="upperBuckle">
+				<div class="nit"></div>
+				<div class="nit"></div>
+				<div class="chromeThing">
+					<div class="roundThing"></div>
+				</div>
+			</div>
+			<div class="lowerBuckle">
+				<div class="chromePointy"></div>
+				<div class="strap"></div>
+				<div class="strap"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+			</div>
+		</div>
+		<div id="rightBuckle">
+			<div class="upperBuckle">
+				<div class="nit"></div>
+				<div class="nit"></div>
+				<div class="chromeThing">
+					<div class="roundThing"></div>
+				</div>
+			</div>
+			<div class="lowerBuckle">
+				<div class="chromePointy"></div>
+				<div class="strap"></div>
+				<div class="strap"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+				<div class="hole"></div>
+			</div>
+
+		</div>
+	</div>
+	<div id="leftSidePocket"></div>
+	<div id="leftSidePocket"></div>
+	<div id="leftRope"><div></div></div>
+	<div id="RightRope"><div></div></div>
+	<div id="backpackBottom"></div>
+</div>*/
+
+#backpackAndStool{
+	position: absolute;
+	left: 120px;
+	bottom: 3px;
+	width: 100px;
+	height: 121px;
+}
+
+#stool{
+	position: absolute;
+	left: 50%;
+	bottom: -1px;
+	transform: translateX(-50%);
+	height: 60px;
+	width: 60px;
+}
+
+#stoolTop{
+	width: 100%;
+	height: 8px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	border-radius: 8px 8px 5px 5px;
+	border: 1px solid black;
+	background-color: white;
+	z-index: 2;
+}
+
+#stoolTop div{
+	position: absolute;
+	bottom: 1px;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+.stoolLeg{
+	position: absolute;
+	top: 5px;
+	z-index: 1;
+	width: 3px;
+	height: 55px;
+	border: 1px solid black;
+	background-color: white;
+	
+	border-radius: 0px 0px 5px 5px;
+	z-index: 1;
+}
+
+#sLeg1{
+	left: 3px;
+	transform: rotateZ(3deg);
+}
+
+#sLeg2{
+	right: 3px;
+	transform: rotateZ(-3deg);
+}
+
+#legHolder{
+	position: absolute;
+	bottom: 17px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	width: 45px;
+	border: 1px solid black;
+	background-color: white;
+	
+	z-index: -1;
+}
+
+.stoolLegTop{
+	width: 5px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-4px);
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-radius: 0px 0px 4px 4px;
+	background-color: white;
+	
+	z-index: 2;
+}
+
+.stoolLegTop div{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 1px;
+	height: 80%;
+	border-left: 1px solid white;
+}
+
+#backpackHolder{
+	position: absolute;
+	left: 50%;
+	top: 1px;
+	transform: translateX(-50%);
+	height: 62px;
+	width: 58px;
+}
+
+#leftSidePocket{
+	position: absolute;
+	top: 8px;
+	left: -4px;
+	height: 30px;
+	width: 3px;
+	border-radius: 3px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	z-index: -1;
+}
+
+#rightSidePocket{
+	position: absolute;
+	top: 8px;
+	right: -4px;
+	height: 30px;
+	width: 3px;
+	border-radius: 3px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	z-index: -1;
+}
+
+#backpack{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	height: 60px;
+	width: 58px;
+	border-radius: 4px;
+	border: 1px solid black;
+	z-index: 1;
+	background-color: white;
+}
+
+#backpackHanger{
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid black;
+	z-index: 1;
+	width: 12px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+#backpackHanger div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border: 1px solid black;
+	z-index: 1;
+	width: 7px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+
+#shoulderStrap1, #shoulderStrap2{
+	position: absolute;
+	top: -7px;
+	width: 10px;
+	height: 30px;
+	border-radius: 2px;
+	border: 1px solid black;
+	background-color: rgb(160,160,160);
+}
+
+#shoulderStrap1{
+	left: 5px;
+}
+
+#shoulderStrap2{
+	right: 5px;
+}
+
+
+
+#backpackBottom{
+	position: absolute;
+	bottom: 0px;
+	height: 10px;
+	width: 100%;
+	border-radius: 1px 1px 4px 4px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	transform: translateX(-1px) translateY(1px);
+	z-index: 3;
+}
+
+#cover{
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 30px;
+	width: 52px;
+	border-radius: 3px 3px 5px 5px;
+	border: 1px solid black;
+	background-color: rgb(230,230,230);
+	
+	z-index: 4;
+}
+
+#label{
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 6px;
+	width: 9px;
+	border-radius: 1px;
+	border: 1px solid black;
+	background-color: white;
+	z-index: 3;
+}
+
+#leftBuckle, #rightBuckle{
+	position: absolute;
+	top: 18px;
+	height: 35px;
+	width: 4px;
+	border-radius: 1px;
+	border: 1px solid black;
+	background-color: white;
+	z-index: 4;
+}
+
+.chromeThing{
+	position: absolute;
+	top: 14px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 6px;
+	height: 6px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 2px;
+}
+
+.roundThing{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 2px;
+	height: 1px;
+	border: 1px solid black;
+	border-radius: 1px;
+}
+
+#leftBuckle{
+	left: 10px;
+	transform: translateX(-50%);
+}
+
+#rightBuckle{
+	right: 10px;
+	transform: translateX(50%);
+}
+
+.nit{
+	position: absolute;
+	transform: translateX(1px);
+	height: 2px;
+	width: 2px;
+	border-radius: 50%;
+	background-color: black;
+}
+#leftBuckle .nit:nth-child(1), #rightBuckle .nit:nth-child(1){
+	top: 2px;
+}
+#leftBuckle .nit:nth-child(2), #rightBuckle .nit:nth-child(2){
+	top: 5px;
+}
+
+
+.lowerBuckle{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 16px;
+	width: 4px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 2px;
+	height: 20px;
+	z-index: 5;
+}
+
+.pointyThing{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: black;
+	height: 3px;
+	width: 1px;
+}
+
+
+
+
+
+
+
+

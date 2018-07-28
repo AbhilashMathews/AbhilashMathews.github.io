@@ -1,0 +1,297 @@
+
+
+/*---------------------------------------*/
+/*	---------- Personal Projects -------  */
+/*---------------------------------------*/
+
+
+
+.projects{
+	background-color: black;
+	z-index: 3;
+	width: 100%;
+	padding: 0;
+	display: block;
+	position: relative;
+	transform: translate3d(0,0,0);
+	text-align: center;
+	overflow: hidden;
+	transition: 0.2s linear;
+	padding-top: 100px;
+	transform: translate3d(0,0,0);
+	margin-bottom: 400px;
+	height: 1100px;
+}
+
+#projectFilter{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 140%;
+	background-color: rgba(0,0,0,0.3);
+	/*background-color: rgba(0,0,0,0.6);*/
+	display: none;
+}
+
+#projWrapper{
+	position: relative;
+	width: 90%;
+	height: 100%;
+	max-width: 1400px;
+}
+
+#projectHeader{
+	position: relative;
+	margin: 0 auto;
+	top: 100px;
+	display: block;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 42px;
+	z-index: 4;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	letter-spacing: -1px;
+}
+
+
+.slideDiv{
+	position: absolute;
+	left: 20px;
+	top: 55%;
+	transform: translateY(-50%);
+	width: 50%;
+	opacity: 0;
+	z-index: -1;
+	overflow: hidden;
+	transition: opacity 1s linear;
+	pointer-events : none;
+}
+
+
+.slideDir{
+	cursor: pointer;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	text-decoration: none;
+	border: 2px solid white;
+	top: 50%;
+	z-index: 5;
+	transform: translater3d(0,0,0) scale(1) translateY(-50%);
+	transition: 0.2s linear;
+}
+
+#slideLeft{
+	left: 20px;
+}
+
+#slideRight{
+	right: 20px;
+}
+
+.slideDir i{
+	color: white;
+	font-size: 30px;
+}
+
+#slideLeft i{
+	transform: translateX(-1px) translateY(-1px);
+}
+
+#slideRight i{
+	transform: translateX(1px) translateY(-1px);
+}
+
+.slideDir:hover{
+	background-color: white;
+}
+
+.slideDir:hover i{
+	color: black;
+}
+
+#slideRight:hover{
+	transform: rotateZ(90deg);
+}
+
+
+.info{
+	text-align: left;
+	color: white;
+	width: 100%;
+	display: inline-block;
+}
+
+
+.info a{
+	display: inline-block;
+	margin-bottom: 25px;
+	text-decoration: none;
+}
+
+.info a p{
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 28px;
+	color: white;
+}
+
+.info a p:hover{
+	color: rgb(230,230,230);
+}
+
+
+
+.info em{
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: block;
+	color: rgb(160,160,160);
+	margin-bottom: 25px;
+}
+
+.info p{
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.info a{
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 16px;
+	color: rgb(34,49,63);
+	color: #CF000F;
+	pointer-events : auto;
+}
+
+.thickBorder{
+	display: block;
+	max-width: 150px;
+	min-width: 50px;
+	width: 20%;
+	border-bottom: 3px solid white;
+	margin: 40px auto 40px 0;
+}
+
+
+.info ul{
+	padding-left: 20px;
+}
+
+.info ul > li{
+	margin-bottom: 5px;
+}
+
+.toolList{
+	padding-top: 30px;
+}
+
+#div4{
+	display: block
+}
+
+
+#projImages{
+	position: absolute;
+	bottom: -70px;
+	right: 20px;
+	display: block;
+	width: 60%;
+	height: auto;
+	opacity: 0;
+}
+
+#projImages a{
+	transition: 0.2s linear;
+}
+
+#projImages a img{
+	width: 100%;
+	height: auto;
+}
+
+/*#projImages a:hover{
+	transform: translateY(-30px);
+}*/
+
+.prototype{
+	position: absolute;
+}
+
+#ethcircle{
+	bottom: 20px;
+	right: 50px;
+	width: 15%;
+	height: auto;
+	z-index: 5;
+}
+
+#mapapp{
+	position: absolute;
+	bottom: 20px;
+	right: 167px;
+	width: 15%;
+	height: auto;
+	z-index: 5;
+}
+
+#site{
+	position: absolute;
+	bottom: 40px;
+	right: 0px;
+	width: 73%;
+	height: auto;
+	z-index: 1;
+}
+
+#site img{
+	border-radius: 5px;
+}
+
+#golf{
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	width: 75%;
+	height: auto;
+	z-index: 3;
+	max-width: 800px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#moodi{
+	position: absolute;
+	bottom: 30px;
+	right: 10px;
+	width: 80%;
+	height: auto;
+	z-index: 2;
+	max-width: 800px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#sonus{
+	position: absolute;
+	bottom: 35px;
+	right: 35px;
+	width: 65%;
+	height: auto;
+	max-width: 600px;
+	z-index: 4;
+
+}
+
+#sonus img{
+	border-radius: 3px;
+}
