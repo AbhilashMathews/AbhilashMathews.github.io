@@ -210,7 +210,7 @@
 	transform: translateX(-50%) translateY(-650px);
 	background-color: yellow;
 	z-index: 10;
-	background: url("../images/zurich1.jpeg") center center;
+	background: url("https://github.com/website-v2/website-v2.github.io/blob/master/images/%20Aerial-AboveSummit-Christopher%20Harting_0.jpg?raw=true") center center;
 	background-size: cover;
 	background-attachment: fixed;
 }*/
@@ -239,7 +239,7 @@
 	left: 0;
 	right: 0;
 	z-index: -100;
-	background-image: url("../images/zurich1.jpeg");
+	background-image: url("https://github.com/website-v2/website-v2.github.io/blob/master/images/%20Aerial-AboveSummit-Christopher%20Harting_0.jpg?raw=true");
 	background-position: center center;
 	background-size: cover;
 }*/
@@ -254,7 +254,7 @@
 	overflow: hidden;
 	z-index: 3;
 	transition: 2s linear;	
-	background: url("../images/zurich1.jpeg") center center;
+	background: url("https://raw.githubusercontent.com/website-v2/website-v2.github.io/master/images/Aerial-AboveSummit-Christopher-Harting_0.png") center center;
 	background-size: cover;
 	background-attachment: fixed;
 }

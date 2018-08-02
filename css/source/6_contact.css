@@ -37,7 +37,7 @@ footer h1{
 
 #contactHeaderLine{
 	position: absolute;
-	right: 1px;
+	right: 0px;
 	bottom: -10px;
 	width: 81px;
 	border-bottom: 4px solid rgb(200,200,200);
@@ -48,6 +48,8 @@ footer h1{
 	width: 100%;
 	max-width: 700px;
 	height: 100%;
+	align-items: center;
+	justify-content: center;
 }
 
 #mail{
@@ -113,16 +115,20 @@ footer h1{
 }
 
 #socWrap{
-	position: absolute;
+	position: relative;
 	bottom: 20%;
-	left: 50%;
+	left: 20%;
 	transform: translateX(-50%) translateY(50%);
 	height: 100px;
-	width: 240px;
+	width: 150px;
 	clear: both;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
 	border-radius: 3px;
 	padding: 0px 0px 0px 0px;
 	z-index: 10;
+	text-rendering: optimizeLegibility;
 }
 
 .socMedia{
@@ -137,7 +143,8 @@ footer h1{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 55px 3px 0 3px;
+	margin: 0px 3px 0 3px;
+	text-align:center;
 	float: left;
 }
 
@@ -153,7 +160,8 @@ footer h1{
 	transition: color 80ms linear;
 	width: 100%;
 	height: 100%;
-	font-size: 20px;
+	font-size: 20px; 
+	text-align:center;
 	margin: 0 auto;
 }
 
@@ -180,8 +188,6 @@ footer h1{
 	fill: white;
 }
 
-
-
 #copyright{
 	position: absolute;
 	left: 15px;
@@ -194,26 +200,3 @@ footer h1{
 	height: 25px;
 	z-index: -2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

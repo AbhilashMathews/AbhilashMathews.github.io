@@ -30,6 +30,13 @@ p{
 	line-height: 32px;
 }
 
+p2{
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.1em;
+    line-height: 1.3em;
+    color: #330;
+}
+
 div{
 	backface-visibility: hidden;
 }

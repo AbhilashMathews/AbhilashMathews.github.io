@@ -74,7 +74,7 @@ $(document).ready(function(){
             semester = 1;
             $(this).children("p").text("Hide Courses");
             var $newCourses = $(this).parent().parent().siblings(".courseWrapper").children(".courses");
-            $newCourses.children(".coursesUpper").children("p").text("Semester 1");
+            $newCourses.children(".coursesUpper").children("p").text("Coursework");
             $newCourses.children(".listWrapper").addClass("noTransition");
             $newCourses.children(".listWrapper").css({"transform": "translateX(0)"});
             $newCourses.children(".listWrapper")[0].offsetHeight;
@@ -86,7 +86,7 @@ $(document).ready(function(){
         }else{
             $(this).children("p").text("Show Courses");
             var $courses = $(this).parent().parent().siblings(".courseWrapper").children(".courses");
-            $courses.children(".coursesUpper").children("p").text("Semester 1");
+            $courses.children(".coursesUpper").children("p").text("Coursework");
             $courses.children(".listWrapper").addClass("noTransition");
             $courses.children(".listWrapper").css({"transform": "translateX(0)"});
             $courses.children(".listWrapper")[0].offsetHeight;
@@ -220,6 +220,7 @@ $(document).ready(function(){
         $('#pSquare2').css({'border-color': '#03A678', 'background-color': 'rgba(3,166,120,0.2)'});
         $('#pCircle1').css({'border-color': '#F39C12', 'background-color': 'rgba(243,156,18,0.2)'});
         $('#pCircle2').css({'border-color': '#6BB9F0', 'background-color': 'rgba(107,185,240,0.2)'});
+        $('#pCircleSun').css({'border-color': '#FFCB87', 'background-color': 'rgba(255,203,135,0.2)'});
         
         setTimeout(function(){
             $('#underResume .bulb').css({'border-color': '#F39C12', 'background-color': '#FDE3A7', 'box-shadow': '0px 0px 10px 0px #F39C12'});
@@ -431,7 +432,7 @@ $(document).ready(function(){
         var offsetFromHeader = $('#projectHeader').position().top + $('#projectHeader').height();
 
         // return height + offsetFromHeader + 190;
-        return biggestHeight + offsetFromHeader + 170;
+        return biggestHeight + offsetFromHeader + 220;
     }
     
     //Slide divs in project section
@@ -554,7 +555,7 @@ var periscopeIfMozilla = function(){
     if($.browser.mozilla){
         $('.eduPeriscope > div').removeClass('schoolImg');
         $('.eduPeriscope').css({
-            'background-image': 'url("../images/zurich1.jpeg")',
+            'background-image': 'url("https://github.com/website-v2/website-v2.github.io/blob/master/images/Aerial-AboveSummit-Christopher-Harting_0.jpeg?raw=true")',
             'background-position': 'center center',
             'background-attachment': 'fixed',
             'background-size': 'cover'
@@ -652,7 +653,7 @@ var isShowing = false;
 function showWork(){
     $('#contact').hide();
     var _this = '.' + $(this).children('.workButton').children('a').data("target");
-    $('#popDownWrapper').css({'height': $(".ericsson").outerHeight()+180+'px'});
+    $('#popDownWrapper').css({'height': $(".ericsson").outerHeight()+220+'px'});
     if(isShowing && _this != lastUsed){
         $(lastUsed).css({'opacity': '0', 'z-index': '-1'});
         $(lastUsed).bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
