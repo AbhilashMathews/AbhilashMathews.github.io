@@ -916,8 +916,8 @@
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
-	right: 1px;
-	top: -40px;
+	right: -30px;
+	top: -250px;
 }
 
 #pSquare1{
