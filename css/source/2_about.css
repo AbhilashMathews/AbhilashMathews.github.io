@@ -1250,6 +1250,7 @@
 	z-index: 3;
 }
 
+/*
 #leftBuckle, #rightBuckle{
 	position: absolute;
 	top: 18px;
@@ -1322,6 +1323,7 @@
 	height: 20px;
 	z-index: 5;
 }
+*/
 
 .pointyThing{
 	position: absolute;
