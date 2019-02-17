@@ -1222,6 +1222,7 @@
 	transform: translateX(-1px) translateY(1px);
 	z-index: 3;
 }
+*/
 
 #cover{
 	position: absolute;
@@ -1332,4 +1333,3 @@
 	height: 3px;
 	width: 1px;
 }
-*/
