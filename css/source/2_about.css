@@ -937,6 +937,7 @@
 	bottom: 13px;
 }
 
+/*
 #pSquare3{
 	position: absolute;
 	border: 1px solid black;
@@ -946,7 +947,8 @@
 	top: 12px;
 	background-color: white;
 	z-index: 10;
-}
+} 
+*/
 
 #pCircle1{
 	position: absolute;
