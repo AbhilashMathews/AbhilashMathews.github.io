@@ -321,7 +321,7 @@
 	bottom: 40%;
 	transform: translateX(-50%) translateY(50%);
 }
-/*
+
 #shelf{
 	position: absolute;
 	top: 55px;
@@ -369,7 +369,6 @@
 	border-radius: 3px;
 	z-index: -1;
 }
-*/
 /*
 .leftShelfHolder > div, .rightShelfHolder > div{
 	position: absolute;
@@ -401,7 +400,7 @@
 	height: 2px;
 	background-color: black;
 }*/
-/*
+
 .overBoardLeft, .overBoardRight{
 	position: absolute;
 	bottom: 24px;
@@ -967,7 +966,7 @@
 	right: 5px;
 	bottom: 5px;
 }
-*/
+
 /*<div id="backpack">
 	<div id="cover">
 		<div id="label"><div></div><div>
