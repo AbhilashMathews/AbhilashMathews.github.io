@@ -910,6 +910,16 @@
 }
 */
 
+#pCircleSun{
+	position: absolute;
+	border: 1px solid black;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	right: 1px;
+	top: 99px;
+}
+
 #pSquare1{
 	position: absolute;
 	border: 1px solid black;
@@ -937,16 +947,6 @@
 	top: 12px;
 	background-color: white;
 	z-index: 10;
-}
-
-#pCircleSun{
-	position: absolute;
-	border: 1px solid black;
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	right: 1px;
-	top: 99px;
 }
 
 #pCircle1{
